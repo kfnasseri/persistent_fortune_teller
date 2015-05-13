@@ -23,6 +23,10 @@ Rails.application.routes.draw do
 
 
   get("/delete_zodiac/:the_id", { :controller => "zodiacs", :action => "destroy" })
+
+
+  get("/5/10", { :controller => "numbers", :action => "five_ten"})
+  get("/:min/:max" { :controller => "numbers", :action => "minmax"})
 end
 
 
